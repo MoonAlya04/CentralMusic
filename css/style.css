@@ -213,6 +213,8 @@ h6 {
 
 }
 
+
+
 .prod-card {
     width: 400px;
     box-shadow: 0px 12px 32px 0px #0000000D, 0px 2px 4px 0px #1C054D1A;
@@ -297,7 +299,8 @@ h6 {
     background-color: #ECECEC;
 }
 
-.popular-finds--container {
+.popular-finds--container,
+.gear-heads--container {
     padding: 88px 88px 88px 88px;
 }
 
@@ -307,6 +310,128 @@ h6 {
     width: 100%;
     height: 252px;
 }
+
+.cards-container1 {
+    display: flex;
+    gap: 32px;
+    margin-top: 34px;
+    justify-content: space-between;
+}
+
+
+
+.gear-card {
+    width: 616px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gear-card:nth-child(odd) {
+    background-color: #252525;
+    color: #FFFFFF;
+}
+
+.gear-card:nth-child(even) {
+    color: #252525;
+    background-color: #EAEAEA;
+}
+
+.gear-card-info {
+    padding: 32px;
+}
+
+.gear-card-info>h6 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.gear-card-info>p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.gear-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 487px;
+}
+
+footer {
+    background-color: #505050;
+}
+
+
+.footer--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 69px 88px;
+}
+
+.footer-logo-and-media {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 48px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.white-line {
+    height: 3px;
+    background-color: #ffffff;
+    width: 58px;
+}
+
+.infos>a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.infos>a:nth-child(2) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffffff;
+}
+
+.footer-media>a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footers-script--container {
+    padding: 8px 100px;
+}
+
+.footers-script {
+    background-color: #252525;
+}
+
+.footers-script p {
+    color: white;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 140%;
+}
+
 
 @media screen and (max-width:1240px) {
     .menu-link {
@@ -323,6 +448,10 @@ h6 {
 
     .lastOne {
         display: block;
+    }
+
+    .hidden-card {
+        display: none;
     }
 }
 
@@ -351,13 +480,22 @@ h6 {
     }
 
     .new-products--container {
-        padding: 216px 88px 88px;
+        padding: 216px 63px 63px;
     }
 
-    .popular-finds--container {
-        padding: 88px;
+    .popular-finds--container,
+    .gear-heads--container,
+    .footer--container {
+        padding: 80px 63px 88px 63px;
     }
+
+    .footers-script--container {
+        padding: 8px 100px;
+    }
+
+
 }
+
 
 
 @media screen and (max-width:775px) {
@@ -366,6 +504,10 @@ h6 {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .footer-logo {
+        display: none;
     }
 }
 
@@ -405,11 +547,13 @@ h6 {
     }
 
     .new-products--container {
-        padding-top: 139px;
+        padding: 139px 24px 40px 24px;
     }
 
-    .popular-finds--container {
-        padding-top: 139px;
+    .popular-finds--container,
+    .gear-heads--container,
+    .footer--container {
+        padding: 40px 24px;
     }
 
     .guitar-lessons-info {
@@ -418,10 +562,45 @@ h6 {
     }
 
     .prod-card {
-        max-width: 350px;
+        width: 100%;
+    }
+
+    .gear-card {
+        width: 100%;
     }
 
     .new-product-cards {
         flex: 1 1 100%;
+    }
+
+    .my-account {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer--container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .cards-container1 {
+        flex-direction: column;
+    }
+
+    .store {
+        display: none;
+    }
+
+    .footers-script--container {
+        padding: 8px 100px;
+
+    }
+
+    .footers-script--container>p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
