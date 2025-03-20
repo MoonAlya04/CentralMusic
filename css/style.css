@@ -31,7 +31,7 @@ h6 {
     margin: 0 auto;
 }
 
-.wrapper {
+/* .wrapper {
     width: 100%;
     min-height: 808px;
     background-image: url(../img/unsplash_gioH4gHo0-g.png);
@@ -39,12 +39,29 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 56px;
+    background-attachment: fixed;
+    position: relative;
+} */
+
+.wrapper {
+    width: 100%;
+    min-height: 808px;
+    background-image: linear-gradient(180deg, rgba(2, 6, 11, 0.7) 0%, rgba(2, 6, 11, 0) 32.85%),
+        url(../img/unsplash_gioH4gHo0-g.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 56px;
+    background-attachment: fixed;
+    position: relative;
 }
+
 
 .header--container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .navigation {
@@ -57,26 +74,30 @@ h6 {
     display: flex;
 }
 
-.menu-list{
+.menu-list {
     padding: 16px;
+
 }
+
 .menu-link {
-    color:#FCFCFC ;
+    color: #FCFCFC;
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
+    padding-bottom: 10px;
+    transition: 0.5s;
 }
 
-.icons > a{
+.icons>a {
     color: #FCFCFC;
     font-size: 20px;
 }
 
-.menu-link:hover{
+.menu-link:hover {
     border-bottom: 3px solid #AB0433
 }
 
-#burgerBtn{
+#burgerBtn {
     background-color: transparent;
     border: none;
     color: #FCFCFC;
@@ -84,34 +105,323 @@ h6 {
     display: none;
 }
 
+.heading--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-txt {
+    max-width: 579px;
+    padding: 178px 0;
+}
+
+.heading-txt>h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 2%;
+    color: #ffffff;
+}
+
+
+.guitar-lessons-info {
+    background-image: linear-gradient(rgba(171, 4, 51, 0.8), rgba(171, 4, 51, 0.8)), url(../img/redone.jpg);
+    max-width: 1264px;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0px 12px 32px 0px #0000000D;
+    box-shadow: 0px 2px 4px 0px #1C054D1A;
+    background-position: center;
+    width: 85%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 664px;
+}
+
+
+.guitar-lessons-info>h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.guitar-lessons-info>p {
+    max-width: 616px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 149%;
+    text-align: center;
+    margin: 4px 0 16px 0;
+}
+
+.orange-btn {
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: none;
+    background-color: #FF753A;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffffff;
+
+}
+
+
+.new-products--container {
+    padding: 216px 88px 88px 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titles>h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #505050;
+}
+
+.red-line {
+    height: 3px;
+    background-color: #AB0433;
+    width: 80px;
+    margin: 8px;
+}
+
+.new-product-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    gap: 32px;
+
+}
+
+.prod-card {
+    width: 400px;
+    box-shadow: 0px 12px 32px 0px #0000000D, 0px 2px 4px 0px #1C054D1A;
+    border-radius: 10px;
+    position: relative;
+    flex: 1 1 calc(25% - 10px);
+    min-width: 300px;
+    background-color: #ffffff;
+}
+
+.background-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 252px;
+    background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+}
+
+.cards-img>img {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: -20px;
+    margin: 0 auto;
+    height: 260px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px 24px;
+}
+
+.card-info span {
+    margin-right: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.gray-btn {
+    border: 1px solid #EAEAEA;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #505050;
+    align-self: start;
+    padding: 2px 6px;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #252525;
+}
+
+.price {
+    color: #252525;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-prod {
+    color: #767676;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 6px 0 25px 0;
+}
+
+.lastOne {
+    display: none;
+}
+
+#popularFinds {
+    background-color: #ECECEC;
+}
+
+.popular-finds--container {
+    padding: 88px 88px 88px 88px;
+}
+
+.seomthing-stuped {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 252px;
+}
+
 @media screen and (max-width:1240px) {
-    .menu-link{
+    .menu-link {
         font-size: 14px;
         font-weight: 500;
     }
 }
+
+@media screen and (max-width:1100px) {
+    .new-product-cards {
+        flex-wrap: wrap;
+        flex: 1 1 calc(50% - 10px)
+    }
+
+    .lastOne {
+        display: block;
+    }
+}
+
+
+
 @media screen and (max-width:1024px) {
     [class*="--container"] {
         max-width: 1024px;
         padding: 0 64px;
     }
-    
-    nav{
+
+    nav {
         display: none;
     }
-    .icons{
+
+    .icons {
         display: none;
     }
-    #burgerBtn{
+
+    #burgerBtn {
         display: block;
     }
+
+    .heading-txt {
+        max-width: 475px;
+    }
+
+    .new-products--container {
+        padding: 216px 88px 88px;
+    }
+
+    .popular-finds--container {
+        padding: 88px;
+    }
 }
+
+
+@media screen and (max-width:775px) {
+    .new-product-cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:600px) {
     [class*="--container"] {
         max-width: 600px;
         padding: 0 24px;
     }
-    .logo-link>img{
+
+    .wrapper {
+        object-fit: contain;
+        width: 100%;
+        min-height: 507px;
+        background-position: 60% top;
+    }
+
+    .logo-link>img {
         width: 154px;
+    }
+
+    .guitar-lessons-info>h2 {
+        font-size: 21px;
+    }
+
+    .guitar-lessons-info>p {
+        font-size: 10px;
+    }
+
+    .heading-txt {
+        padding: 110px 0;
+    }
+
+    .heading-txt>h1 {
+        font-size: 32px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .new-products--container {
+        padding-top: 139px;
+    }
+
+    .popular-finds--container {
+        padding-top: 139px;
+    }
+
+    .guitar-lessons-info {
+        padding: 18px 51px;
+        top: 422px;
+    }
+
+    .prod-card {
+        max-width: 350px;
+    }
+
+    .new-product-cards {
+        flex: 1 1 100%;
     }
 }
