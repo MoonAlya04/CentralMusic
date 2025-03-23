@@ -202,8 +202,6 @@ h6 {
 
 }
 
-
-
 .prod-card {
     width: 400px;
     box-shadow: 0px 12px 32px 0px #0000000D, 0px 2px 4px 0px #1C054D1A;
@@ -425,7 +423,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 250px;
     height: 100vh;
     background-color: #252525;
     color: #fff;
@@ -444,7 +442,7 @@ footer {
 
 .mobile-menu a {
     color: #fff;
-    font-size: 28px;
+    font-size: 18px;
     padding: 15px 0;
     transition: 0.5s;
 }
@@ -469,12 +467,12 @@ footer {
     background: none;
     border: none;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     cursor: pointer;
     position: absolute;
-    top: 57px;
-    right: 74px;
+    top: 50px;
+    right: 72px;
     transition: color 0.3s;
 }
 
@@ -597,6 +595,10 @@ footer {
         font-size: 32px;
         letter-spacing: 0%;
         text-align: center;
+    }
+    .close-btn {
+        top: 50px;
+        right: 32px;
     }
 
     .new-products--container {
